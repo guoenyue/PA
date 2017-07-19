@@ -33,6 +33,7 @@ _about `select` and `textarea`_
 	- 原`listUl`改为`listUl-2` 
 	- 其他详细样式见HTML
 4. js部分在`xpa.js`内添加了　
+```javascript
 		/\* new sidebar slideup and slidedown \*/
 		jQuery(document).ready(function($) {
 		  $(".side-vertical-items > div").css({'display': 'none'})
@@ -49,6 +50,8 @@ _about `select` and `textarea`_
 		    }
 		  });
 		});
+		
+```
 	如无需要添加请告知删除！
 
 ## ver.1.2.1 (2014-12-16) tabBar style
@@ -61,6 +64,7 @@ _about `select` and `textarea`_
 2. 添加了一张背景图片
 	- `public/style/images/list_icon_cdkey.png`
 3. 更改了部分style
+```css
 		.productBox .tabBar li.selected a {
 		   color: #f9f9f9 !important;
 		 }
@@ -89,6 +93,7 @@ _about `select` and `textarea`_
 		 .productBox .tabBar #guides div {
 		   background: url(images/list\_icon\_Guides.png) no-repeat 0px 5px;
 		 }
+```
 4. 更改了部分结构，增加了一个`<li>...</li>`, 详情参看HTML页面。
 	**以`offer_account_Acc_v30.html`为基准制作**
 
@@ -105,6 +110,7 @@ _about `select` and `textarea`_
 		…
 		\* PT 2364 homepage pop style end \*/
 3. add html
+```html
 	<div class="middleMain">
 	  <div id="homepage-pop">
 	  ...
@@ -112,6 +118,7 @@ _about `select` and `textarea`_
 	...
 	...
 	</div>
+```
 4. 由于上一个版本的问题，造成`#text_link_bar`和`#advSearch`调整了一下宽度。所以这次css文件还需要对这两个地方进行修改！然后需要跟`Eddy`说一下让他去修改`#text_link_bar`的宽度控制。
 
 **PS: 请添加style进css文件的时候，按位置添加，不要都加在末尾处！**
