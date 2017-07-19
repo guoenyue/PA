@@ -56,6 +56,7 @@
 	- delete about `#contactUsBtn` style
 	- delete about `#textButton` style
 	- add about `#text_link_bar` style
+	```css
 			/\* case 2361 change star to  here \*/
 			\#text\_link\_bar {
 			 background: #2a2a2a;
@@ -96,4 +97,5 @@
 			}
 			/\* delete #contactUsBtn style \*/
 			/\* case 2361 change end to  here \*/
+	```
 3. Final…
