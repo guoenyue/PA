@@ -57,45 +57,45 @@
 	- delete about `#textButton` style
 	- add about `#text_link_bar` style
 	```css
-			/\* case 2361 change star to  here \*/
-			\#text\_link\_bar {
+			/* case 2361 change star to  here */
+			#text_link_bar {
 			 background: #2a2a2a;
 			 float: left;
 			  width: 750px;
 			  height: 39px;
 			  margin-left: 9px;
 			}
-			\#text\_link\_bar ul {
+			#text_link_bar ul {
 			  width: 100%;
 			  display: block;
 			  color: #f9f9f9;
 			  font-size: 12px;
 			  padding: 6px 20px;
 			}
-			\#text\_link\_bar ul li {
+			#text_link_bar ul li {
 			  float: left;
 			  padding: 0 20px;
 			  border-left: 1px solid #636363;
 			  text-align: center;
 			}
-			\#text\_link\_bar ul li span {
+			#text_link_bar ul li span {
 			  font-size: 11px;
 			  color: #BCBCBC;
 			}
-			\#text\_link\_bar ul li:first-child {
+			#text_link_bar ul li:first-child {
 			  border: 0;
 			}
-			\#text\_link\_bar ul a:link {
+			#text_link_bar ul a:link {
 			  color: #f9f9f9;
 			}
-			\#text\_link\_bar ul a:visited {
+			#text_link_bar ul a:visited {
 			 color: #f9f9f9;
 			}
-			\#text\_link\_bar ul a:hover {
+			#text_link_bar ul a:hover {
 			  color: #70b9ed;
 			  text-decoration: none;
 			}
-			/\* delete #contactUsBtn style \*/
-			/\* case 2361 change end to  here \*/
+			/* delete #contactUsBtn style */
+			/* case 2361 change end to  here */
 	```
 3. Final…
