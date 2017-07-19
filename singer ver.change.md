@@ -8,11 +8,15 @@
 	- `style_2014_page.css`
 	- `index_2014.css`
 2. 在`head`头文件增加结构:
+
+```html
 		<div id="navBG">
 			  <div><img src="images/2014_xmas_top.png" alt=""></div>
 		</div>
+```
 
 3. 在`foot`页脚增加结构
+```html
 		<div id="foot">
 			<div id="payIcon">
 			</div>
@@ -24,6 +28,7 @@
 			  </div>
 			</div>
 		 </div>
+```
 4. 增加图片文件到目录
 	- images 目录增加:
 		`2014_xmas_foot_tree.png` 和 `2014_xmas_top.png`
