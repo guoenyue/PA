@@ -1,0 +1,196 @@
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+input,
+textarea {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    font-style: italic;
+}
+
+img[src=""],
+img:not([src]) {
+    display: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #333;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+/*base css end*/
+
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-radius {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.btn-success {
+    background-color: #00b400;
+}
+
+.btn-default {
+    background-color: #006bff;
+}
+
+.btn-hollow-default {
+    border: 2px solid #006bff;
+    box-sizing: border-box;
+}
+
+.btn.disabled {
+    cursor: not-allowed !important;
+}
+.btn-block{
+    display:block;
+}
+
+
+
+/*hasDropBox*/
+.hasDropBoxWrapper {
+    position: relative;
+}
+
+.hasDropBox {
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hasDropBox:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    top: 46%;
+    right: 0;
+    color: inherit;
+    cursor: pointer;
+    transform: translateY(-50%) rotateZ(45deg);
+    -webkit-transform: translateY(-50%) rotateZ(45deg);
+    -moz-transform: translateY(-50%) rotateZ(45deg);
+    -ms-transform: translateY(-50%) rotateZ(45deg);
+    -o-transform: translateY(-50%) rotateZ(45deg);
+}
+
+.dropBox {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background-color: #000;
+    opacity: 0;
+}
+
+.hasDropBox.act .dropBox,
+.hasDropBox.act+.dropBox {
+    display: block;
+    z-index: 5;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.posB{
+    bottom:calc(100% + 20px);
+}
+.posT{
+    top:calc(100% + 20px);
+}
+.hasDropBox.act .dropBox::after,
+.hasDropBox.act+.dropBox.posT::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    left: 50%;
+    top: -4px;
+    transform: translateX(-50%) rotate(-45deg);
+    -webkit-transform: translateX(-50%) rotate(-45deg);
+    -moz-transform: translateX(-50%) rotate(-45deg);
+    -ms-transform: translateX(-50%) rotate(-45deg);
+    -o-transform: translateX(-50%) rotate(-45deg);
+}
+
+.hasDropBox.act+.dropBox.posB::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    left: 50%;
+    top: auto;
+    bottom: -4px;
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) rotate(45deg);
+}

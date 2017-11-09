@@ -1,0 +1,30 @@
+.stackable.very.relaxed .row{
+	margin:2em 0;
+}
+.logo-text{
+	margin:2em 0;
+}
+.my-title{
+	margin-bottom: 1.6em!important;
+}
+.my-txt-red{
+	color:#db2828!important;
+}
+.my-txt-default{
+	color: #006bff!important;
+}
+.my-txt-success{
+	color:#00b400!important;
+}
+.my-txt-gray{
+	color:#767676!important;
+}
+
+.testbox{
+	padding: 30px;
+	color:#fff;
+	background-color: #141922;
+}
+.my-test-dropbox-btn1{
+	width:240px;
+}

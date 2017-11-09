@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XPA-dispute-words</title>
+    <link rel="stylesheet" href="./assets/css/semantic.min.css">
+    <link rel="stylesheet" href="./app/css/common.css">
+    <link rel="stylesheet" href="./app/css/site.css">
+</head>
+<body>
+    <!-- <div class="ui large top fixed menu transition hidden">
+        <div class="ui container">
+            <a class="active item">Home</a>
+            <a class="item">Work</a>
+            <a class="item">Company</a>
+            <a class="item">Careers</a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui button">Log in</a>
+                </div>
+                <div class="item">
+                    <a class="ui primary button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="ui sidebar inverted vertical menu" id="asideCont">
+        <a class="item">
+          网站基本样式
+      </a>
+      <a class="item">
+          网站主题样式
+      </a>
+      <a class="item">
+          网站使用框架
+      </a>
+    </div>
+<div class="pusher">
+    <!-- Site content !-->
+    <div class="ui inverted vertical masthead center aligned segment">
+        <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
+                <a class="toc item" id="menuBtn">
+                    菜单
+                    <i class="sidebar icon"></i>
+                </a>
+                <div class="right item">
+                  <a class="ui inverted logo"><img src="./assets/img/logo.png" alt="PA"></a>
+                </div>
+            </div>
+        </div>
+        <div class="ui text container">
+            <h1 class="ui inverted header">
+                <!-- BALA BALA BALA BALA  -->
+                Playerauctions
+            </h1>
+            <h2 class="logo-text">
+                <!-- BALA BALA BALA BALA BALA BALA BALA -->
+                PA官网争议系统(Dispute)开发样式说明
+            </h2>
+            <div class="ui huge primary button">ENTER<i class="right arrow icon"></i></div>
+        </div>
+    </div>
+    <div class="stackable very relaxed ui grid container">
+        <div class="row">
+            <div class="sixteen wide column">
+                <h2 class="ui dividing header my-title">使用框架</h2>
+            </div>
+            <div class="seven wide column">
+                <h3 class="ui header">JS：</h3>
+                <p><a href="https://code.angularjs.org/1.4.0-rc.2/docs/api" target="_blank"><strong class="ui blue header">AngularJS</strong></a>:<a href="https://code.angularjs.org/1.4.0-rc.2/" target="_blank" class="ui red header">v1.4.0-rc.2</a></p>
+                <p><a href="https://ui-router.github.io/ng1/" target="_blank"><strong class="ui blue header">UI-Router</strong></a>:<a href="http://www.bootcdn.cn/angular-ui-router/" target="_blank" class="ui red header">v0.2.18</a></p>
+                <p><a href="http://requirejs.org/" target="_blank"><strong class="ui blue header">RequireJS</strong></a>:<a href="http://requirejs.org/docs/download.html" target="_blank" class="ui red header">v2.3.4</a></p>
+                <p></p>
+            </div>
+            <div class="nine wide column">
+                <div class="ui existing segment">
+                    <code class="code xml"> 
+                        &lt;script src="./assets/js/angular.min.js"&gt;&lt;/script&gt; <br> </br>
+                        &lt;script src="./assets/js/angular-ui-router.min.js"&gt;&lt;/script&gt;</br></br>
+                        &lt;script src="./assets/js/require2.min.js"&gt;&lt;/script&gt;
+                    </code>
+                </div>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="row">
+            <div class="sixteen wide column">
+                <h2 class="ui dividing header my-title">字体</h2>
+            </div>
+            <div class="seven wide column">
+                <p><strong class="ui blue header">Nunito</strong></p>
+                <p><strong class="ui blue header">Nunito_B<span class="sub header">(粗体)</span></strong></p>
+                <p><strong class="ui blue header">Nunito_L<span class="sub header">(细体)</span></strong></p>
+                <p></p>
+            </div>
+            <div class="nine wide column">
+                <div class="ui existing segment">
+                    <code class="code css">
+                        @font-face { <br>
+                            font-family: "Nunito";<br>
+                            src: url("../font/Nunito-Regular.ttf");<br>
+                            src: url("../font/Nunito-Regular.ttf") format('truetype');<br>
+                        }<br>
+                        @font-face {<br>
+                            font-family: "Nunito_B";<br>
+                            src: url("../font/Nunito-Bold.ttf");<br>
+                            src: url("../font/Nunito-Bold.ttf") format('truetype');<br>
+                        }<br>
+                        @font-face {<br>
+                            font-family: "Nunito_L";<br>
+                            src: url("../font/Nunito-Light.ttf");<br>
+                            src: url("../font/Nunito-Light.ttf") format('truetype');<br>
+                        }<br>
+                        body{<br>
+                            font:"Nunito", "微软雅黑", "Microsoft YaHei", Arial, Tahoma, Verdana, Helvetica, <br>Serif, sans-serif, Monospace;<br>
+                        }<br>
+                    </code>
+                </div>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="row">
+            <div class="sixteen wide column">
+                <h2 class="ui dividing header my-title">响应式</h2>
+            </div>
+            <div class="sixteen wide column">
+               <table class="ui selectable attached table">
+                    <thead>
+                        <tr>
+                            <th>影响到的项目/响应尺寸(width)</th>
+                            <th>0-767px</th>
+                            <th>768px-991px</th>
+                            <th>992px-1298px</th>
+                            <th>1298px+</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>标记</td>
+                        <td><span class="my-txt-red">m<small class="my-txt-gray">[-]</small></span></td>
+                        <td><span class="my-txt-red">sm<small class="my-txt-gray">[-]</small></span></td>
+                        <td><span class="my-txt-red">md<small class="my-txt-gray">[-]</small></span></td>
+                        <td><small class="my-txt-gray">已省略</small></td>
+                      </tr>
+                      <tr>
+                        <td>可见性(show)</td>
+                        <td class="positive">m-show</td>
+                        <td class="positive">sm-show</td>
+                        <td class="positive">md-show</td>
+                        <td class="positive">show<small class="my-txt-gray">已省略</small></td>
+                      </tr>
+                      <tr>
+                        <td>不可见性(hide)</td>
+                        <td class="negative">m-hide</td>
+                        <td class="negative">sm-hide</td>
+                        <td class="negative">md-hide</td>
+                        <td class="negative">default-hide</td>
+                      </tr>
+                      <tr>
+                        <td>按钮命名btn-*-tag</td>
+                        <td><span class="my-txt-red">btn-*-m</span></td>
+                        <td><span class="my-txt-red">btn-*-sm</span></td>
+                        <td><span class="my-txt-red">btn-*-md</span></td>
+                        <td><span class="my-txt-red">btn-*</span></td>
+                      </tr>
+                      <tr>
+                        <td>responsebox</td>
+                        <td><span class="my-txt-red">display:block</span></td>
+                        <td><span class="my-txt-red">display:inline</span></td>
+                        <td><span class="my-txt-red">display:inline</span></td>
+                        <td><span class="my-txt-red">display:inline</span></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="row">
+            <div class="sixteen wide column">
+                <h2 class="ui dividing header my-title">Layout</h2>
+            </div>
+            <div class="sixteen wide column">
+               <table class="ui selectable attached table">
+                    <thead>
+                        <tr>
+                            <th>容器名字</th>
+                            <th>盒子尺寸</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>body</td>
+                        <td>width:100%</td>
+                        <td><a class="ui tag red label">全局</a></td>
+                      </tr>
+                      <tr>
+                        <td>container</td>
+                        <td>width: 1280px;margin: 0 auto;padding-top: 1px;box-sizing: border-box;</td>
+                        <td><p>在移动端下对应各个状态为mcontainer,smcontainer,mdcontainer尺寸均为<b class="my-txt-red">width:100%</b></p></td>
+                      </tr>
+                      <tr>
+                        <td>boxWrapper</td>
+                        <td>display: inline-block;*display: inline;*zoom: 0;width: 100%;</td>
+                        <td>始终表现为inlin-block;但其作为寄主元素的after可以清除浮动，该wrapper作用与clearfix相当，另相同行内盒子还有<span class="my-txt-red">.lineblock</span></td>
+                      </tr>
+                      <tr>
+                        <td>responseboxWrapper</td>
+                        <td>width:100%</td>
+                        <td>该盒子为响应盒子，在768px尺寸下是块级元素，在其他尺寸在均为inlineblock,所以其宽度可能会随标签具体设定宽度而变化，默认width:100%;</td>
+                      </tr>
+                      <tr>
+                        <td>gridBox</td>
+                        <td>display:table;</td>
+                        <td><a class="ui tag teal label">辅助盒子</a></td>
+                      </tr>
+                      <tr>
+                        <td>flexbox</td>
+                        <td>display:flex;</td>
+                        <td><a class="ui tag teal label">辅助盒子</a></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <small class="my-txt-gray">注：当前页面内的所有容器由外向内依次为<span class="my-txt-red">wrapper&gt;box&gt;group&gt;list&gt;item</span>,如此嵌套</small>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="row">
+            <div class="sixteen wide column">
+                <h2 class="ui dividing header my-title">按钮</h2>
+            </div>
+            <div class="sixteen wide column">
+               <table class="ui selectable striped table">
+                    <thead>
+                        <tr>
+                            <th>按钮类型(类名)</th>
+                            <th>按钮表现</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>btn</td>
+                        <td class="active"><div class="btn">.btn</div>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><p>原始状态的btn,<i class="my-txt-red">div</i>标签,样式表未对button进行任何操作，代码中所有出现的按钮均用<i class="my-txt-red">div</i>或其他元素模拟</p></td>
+                      </tr>
+                      <tr>
+                        <td>btn-radius</td>
+                        <td class="active"><div class="btn btn-radius btn-default">.btn-radius</div></td>
+                        <td><p>圆角按钮，border-radius为4px</p></td>
+                      </tr>
+                      <tr>
+                        <td>btn-hollow-default</td>
+                        <td class="active"><div class="btn btn-hollow-default">.btn-hollow-default</div></td>
+                        <td><p>空心按钮</p></td>
+                      </tr>
+                      <tr>
+                        <td>btn-default</td>
+                        <td class="active"><div class="btn btn-default">.btn-default</div></td>
+                        <td><p>该类为设置按钮颜色类，如上btn-radius为了方便演示radius为按钮添加了btn-default类，颜色值为<span class="my-txt-default">#006bff</span></p></td>
+                      </tr>
+                      <tr>
+                        <td>btn-success</td>
+                        <td class="active"><div class="btn btn-success">.btn-success</div></td>
+                        <td><p>该类为设置按钮颜色辅助类，颜色值为<span class="my-txt-success">#00b400</span></p></td>
+                      </tr>
+                      <tr>
+                        <td>btn-block-*</td>
+                        <td class="active"><div class="btn btn-block btn-success">.btn-block</div></td>
+                        <td><p>伸展按钮，即占据100%宽度的块级按钮，*可替换成m/sm/md等表示在那一尺寸下以块级按钮存在。</p></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="row">
+            <div class="sixteen wide column">
+                <h2 class="ui header">组件</h2>
+                <small class="my-txt-gray"> 组件可分为样式组件和JS组件，有些组件更是二者混合存在,先从css组件说起</small>
+                <div class="ui divider"></div>
+            </div>
+            <div class="five wide column">
+                <h3 class="ui header black">样式组件1. hasDropBox</h3>
+                <p>该下拉盒子通过hasDrop是否携带active状态来显示或隐藏dropBox里的内容,并且dropBox盒子的出现方向与他自身的pos类有关，总共有两个类：posT(从上方出现，小箭头朝下),posB(从下方出现，小箭头朝上)。小箭头的方向会自己根据类的状态及名称自己适应，无需再管。</p>
+            </div>
+            <div class="eleven wide column">
+                <div class="ui existing segment">
+                    <div class="testbox">
+                        <div class="hasDropBox my-test-dropbox-btn1">我是一个有下拉列表的按钮</div>
+                        <div class="hasDropBoxWrapper" style="width:240px;">
+                            <div class="hasDropBox my-test-dropbox-btn1 act">我是一个处于激活状态的按钮
+                            </div>
+                            <div class="dropBox  posB" style="background:#642199;padding:10px;">
+                                    我是下拉盒子的内容<br>
+                                    并且我是从上边显示<br>
+                            </div>
+                        </div>
+                        <div style="width:280px;float:right;">
+                            <div class="hasDropBoxWrapper">
+                                <div class="hasDropBox my-test-dropbox-btn1" id="testDropBoxBtn1">点击我可以toggle盒子渐显
+                                </div>
+                                <div class="dropBox posT" style="background:#642199;padding:10px;">
+                                    我是下拉盒子的内容<br>
+                                    并且我是从下边显示<br>
+                                    我是下拉盒子的内容<br>
+                                    并且我是从下边显示<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codeArea" style="white-space: pre-wrap;">
+                        <code class="code html">
+                            &lt;div class="hasDropBoxWrapper"&gt;
+                                &lt;div class="hasDropBox"&gt;我是开关，点我即可&lt;/div&gt;
+                                &lt;div class="dropBox posB"&gt;我是内容，点击开关我会按状态显示隐藏&lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<script src="./assets/js/jquery-3.2.1.min.js"></script>
+<script src="./assets/js/semantic.min.js"></script>
+<script src="./assets/js/transition.min.js"></script>
+<script type="text/javascript">
+         // fix menu when passed
+         $('.secondary')
+             .visibility({
+              once: false,
+              onBottomPassed: function() {
+                $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function() {
+                $('.fixed.menu').transition('fade out');
+            }
+        });
+         $("#menuBtn").on("click",function(e){
+            $('.ui.sidebar').sidebar('toggle');
+        });
+         $("#asideCont").on("click",".item",function(e){
+            $('.ui.sidebar').sidebar('toggle');
+        });
+        $("#testDropBoxBtn1").on("click",function(){
+            $(this).toggleClass("act");
+        });
+    </script>
+</body>
+</html>
